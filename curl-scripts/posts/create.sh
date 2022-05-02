@@ -3,10 +3,10 @@
 API="http://localhost:4741"
 URL_PATH="/posts"
 
-TEXT="iamtext"
-TITLE="iamatitle"
-DATE="2003-01-25"
-TOKEN="89bf6f1453a82d1b7b585adcfd366af6"
+TEXT="SomeRandomTextGoesHere"
+TITLE="RANDOM POST"
+DATE="2023-01-25"
+TOKEN="ac405d5975af2c27b4aea61516c7ce18"
 
 curl "${API}${URL_PATH}" \
   --include \
