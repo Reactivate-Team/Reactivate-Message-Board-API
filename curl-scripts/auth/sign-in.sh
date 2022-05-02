@@ -2,7 +2,7 @@
 
 API="http://localhost:4741"
 URL_PATH="/sign-in"
-EMAIL="me@gmail.com"
+EMAIL="britt@gmail.com"
 PASSWORD="password"
 
 curl "${API}${URL_PATH}" \
