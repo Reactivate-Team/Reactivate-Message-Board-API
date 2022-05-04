@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema({
   hashedPassword: {
     type: String,
     required: true
-  },  
+  },
   username: {
     type: String,
     required: true,

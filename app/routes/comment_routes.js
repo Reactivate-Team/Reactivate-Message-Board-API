@@ -10,7 +10,7 @@ router.post('/comments', (req, res, next) => {
 
   const postID = commentData.postId
 
-  Post.findById(postID)
+  Post.findById(postID).populate('owner')
     .then(handle404)
     .then(post => {
       post.comments.push(commentData)
@@ -26,7 +26,7 @@ router.patch('/comments/:commentID', (req, res, next) => {
   const commentData = req.body.comment
   const postID = commentData.postId
 
-  Post.findById(postID)
+  Post.findById(postID).populate('owner')
     .then(handle404)
     .then(post => {
       const comment = post.comments.id(commentID)
@@ -43,7 +43,7 @@ router.delete('/comments/:commentID', (req, res, next) => {
   const commentID = req.params.commentID
   const postID = req.body.comment.postId
 
-  Post.findById(postID)
+  Post.findById(postID).populate('owner')
     .then(handle404)
     .then(post => {
       const comment = post.comments.id(commentID)
