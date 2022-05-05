@@ -3,12 +3,18 @@ const router = express.Router()
 const handle404 = require('../../lib/custom_errors')
 
 const Post = require('../models/post')
+const passport = require('passport')
+const requireToken = passport.authenticate('bearer', { session: false })
 
-// POST create
-router.post('/comments', (req, res, next) => {
+router.post('/comments', requireToken, (req, res, next) => {
+  console.log(req.user)
   const commentData = req.body.comment
 
   const postID = commentData.postId
+
+  commentData.owner = req.user.id
+
+  commentData.username = req.user.username
 
   Post.findById(postID).populate('owner')
     .then(handle404)
