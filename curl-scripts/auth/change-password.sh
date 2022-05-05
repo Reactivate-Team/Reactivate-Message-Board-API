@@ -2,6 +2,9 @@
 
 API="http://localhost:4741"
 URL_PATH="/change-password"
+OLDPW="password"
+NEWPW="password2"
+
 
 curl "${API}${URL_PATH}/" \
   --include \
