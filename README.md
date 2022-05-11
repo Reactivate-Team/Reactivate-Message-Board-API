@@ -5,11 +5,11 @@ Users are able to create an account, share their thoughts and ideas, get the lat
 
 ## Deployed Application
 
-Please visit the following link to the deployed application: git hub pages link to production
+[Link](https://reactivate-team.github.io/Reactivate-Message-Board-Client/) to deployed application.
 
-Link to deployed Heroku remote server: deployed heroku link
+[Link](https://murmuring-brook-35134.herokuapp.com/) to deployed Heroku remote server.
 
-Link to Client repository: https://github.com/Reactivate-Team/Reactivate-Message-Board-Client
+[Link](https://github.com/Reactivate-Team/Reactivate-Message-Board-Client) to Client repository
 
 ## User Stories
 * As an unregistered user, I would like to sign up with email and password.
@@ -44,7 +44,8 @@ Other technologies used:
 
 ## ERD
 
-To view a first draft ERD of the app, [click here](/public/Message%20Board%20ERD%20.jpeg).
+
+![Message Board ERD ](https://media.git.generalassemb.ly/user/41949/files/2f1e2d00-d148-11ec-9165-bfb8ae378bf3)
 
 ## API Routes
 
